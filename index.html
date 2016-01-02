@@ -1,0 +1,13 @@
+<!-- Component Dependencies -->
+	<link rel="import" href="../polymer/polymer.html">
+	<link rel="import" href="../liquid-hotkey-event/index.html">
+
+<!-- Component Definition and Template -->
+	<dom-module id="forge-repainter">
+		<link rel="import" type="css" href="style.css">
+		<template>
+			<button>R</button>
+			<liquid-hotkey-event on="document" keys="ctrl+f6" keyevent="up" emits="repaint-document"></liquid-hotkey-event>
+		</template>
+	</dom-module>
+	<script src="register.js"></script>
