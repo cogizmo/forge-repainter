@@ -12,8 +12,9 @@
 		},
 
 		listeners: {
-			'repaint-document': onReloadWindow
-		}
+			'repaint-document': '_onRequestRepaint'
+		},
+		_onRequestRepaint: onRepaintRequested
 	});
 
 	function onElementCreated() {
@@ -32,7 +33,7 @@
 
 	}
 
-	function onReloadWindow(event) {
+	function onRepaintRequested(event) {
 		console.log('Repaint Requested');
 	}
 
